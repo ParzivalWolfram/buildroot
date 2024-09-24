@@ -18,7 +18,11 @@ import hashlib
 import re
 import textwrap
 import tempfile
-import imp
+try:
+    import imp
+except ModuleNotFoundError:
+    print("Python 3.12+ not compatible with this version of scanpypi.")
+    exit(1)
 from functools import wraps
 import six.moves.urllib.request
 import six.moves.urllib.error
