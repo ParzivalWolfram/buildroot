@@ -1,0 +1,7 @@
+config BR2_PACKAGE_HOST_PYTHON_FIRMTOOL
+	bool "host python-firmtool"
+	select BR2_PACKAGE_HOST_PYTHON_PYCRYPTODOME
+	select BR2_PACKAGE_HOST_PYTHON3
+	help
+	  A tool to parse, extract, and build 3DS firmware files.
+	  https://github.com/TuxSH/firmtool
